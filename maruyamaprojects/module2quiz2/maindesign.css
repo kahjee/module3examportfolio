@@ -1,0 +1,97 @@
+@import url(https://fonts.google.com/specimen/Montserrat);
+
+body{
+    font-family: "Montserrat";
+    background-color: white
+}
+
+.navheader{
+    display: flex;
+    background-color: rgb(214, 214, 214);
+    margin: 0;
+    padding: 1rem 0;
+    justify-content: center;
+}
+
+.navlistitem{
+    list-style: none;
+    margin: 2rem;
+}
+
+.navlistitem a{
+    text-decoration: none;
+    text-emphasis: none;
+    color: black;
+}
+
+.head{
+    text-align: center;
+    size: 30px;
+}
+
+.flexcontainer{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+}
+
+.boxdesign{
+    display: flex;
+    background-color: rgb(214, 214, 214);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.boxdesign :last-child{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ahw{
+    display: flex;
+    width: 100px;
+    size: 100px;
+    justify-content: left;
+    border-radius: 15px;
+    margin: 2rem;
+}
+
+.mf{
+    display: flex;
+    justify-content: left;
+    margin: 2rem;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+
+.calc{
+    align-items: center;
+    background-color: white;
+    border-color: 1px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    flex-basis: 100%;
+    margin: 10px;
+}
+
+.calories{
+    align-items: center;
+    background-color: rgb(214, 214, 214);
+    color: black;
+    border-color: 1px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    flex-basis: 100%;
+    margin: 10px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="maindesign.css">
+        <script src="mainjs.js"></script>
+        <title>Calorie Tracker</title>
+    </head>
+    <body>
+        <div id="websiteheader">
+            <navbar>
+                <ul class="navheader">
+                    <li class="navlistitem">
+                        <a href="mainhome.html">Home</a>
+                    </li>
+                    <li class="navlistitem">
+                        <a href="health.html">Health Blog</a>
+                    </li>
+                    <li class="navlistitem">
+                        <a href="about.html">About Us</a>
+                    </li>
+                </ul>
+            </navbar>
+        </div>
+
+        <h1 style="text-align: center;">
+            Daily Recommended Calorie Tracker
+        </h1>
+
+        <p class="head">
+            The calorie tracker collects your age, height, weight, biological sex, and level of activity, and tracks your daily food intake. It then displays how much calories you should eat for the remainder of the day.
+        </p>
+        <p class="head">
+            The height input only accepts centimeters (cm), and the weight input only accepts kilograms (kg).
+        </p>
+        <br>
+
+        <div class="boxdesign">
+            <label for="age">Age</label>
+            <input id="age" type="number" min="1" placeholder="Your Age" class="ahw">
+            <label for="height">Height</label>
+            <input id="height" type="number" min="0" placeholder="Your Height" class="ahw">
+            <label for="weight">Weight</label>
+            <input id="weight" type="number" min="0" placeholder="Your Weight" class="ahw">
+            <label for="mf">Sex</label>
+            <form class="mf" id="mf">
+                <input type="radio" name="sex" value="male"> Male
+                <input type="radio" name="sex" value="female"> Female
+            </form>
+            <label for="list">Activity</label>
+            <div class="dropdown">
+                <select id="list">
+                    <option selected value="s">Sedentary (little to no exercise at all)</option>
+                    <option value="l">Light Activity (light exercise for 1-3 days/week)</option>
+                    <option value="m">Moderate Activity (moderate exercise for 3-5 days/week)</option>
+                    <option value="h">Heavy Activity (vigorous exercise for 6-7 days/week)</option>
+                </select>
+            </div>
+            <br>
+            <button class="calc" onclick="calculate()">
+                Calculate Daily Recommended Calories
+            </button>
+        </div>
+
+        <div class="flexcontainer">
+            <div class="calories">
+                <p class="head">
+                    Total Calories
+                </p>
+                <input type="number" class="form-control" id="total-calories" disabled style="justify-content: center;">
+            </div>
+        </div>
+
+        <div class="boxdesign">
+            <div>Food: <input id="food" type="text" class="ahw"></div>
+            <div>Calories: <input id="food-calories" type="number" class="ahw"></div>
+            <button class="calc" onclick="add_row()">
+                Add to list
+            </button>
+            <button class="calc" onclick="clear_list()">
+                Clear list
+            </button>
+        </div>
+        <div id="food-list" class="flexcontainer head">
+        </div>
+        <div class="flexcontainer">
+            <div class="calories">
+                <p class="head">
+                    Reduced Calories
+                </p>
+                <input type="number" class="form-control" id="reduced-calories" disabled style="justify-content: center;">
+            </div>            
+        </div>
+    </body>
+</html>
