@@ -1,0 +1,147 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-image: url('assets/miyazak.jpg');
+    background-size: 100%;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* .logo{
+    width: 150px;
+    height: 80px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+li, a{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #2A262E;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    
+}
+
+.head {
+    width: 70em;
+    background-color: #6CD8D0;
+    position: relative;
+    bottom: 16px;
+    right: 1em;
+}
+
+.navlinks{
+    list-style: none;
+}
+
+.navlinks li{
+    display: inline-block;
+    padding: 0px 20px;
+} */
+
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 3em;
+}
+
+.nav-item a {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #2A262E;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.nav-item:first-child {
+    margin-right: auto;
+    margin-left: 1em;
+    
+}
+
+
+header {
+    background-color: #2ED1C5;
+    height: 5em;
+    position: relative;
+    bottom: 16px;
+    padding: 30px;  
+}
+
+
+.textbox{
+    display: flex;
+    background-color: #2A262E;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500
+}
+
+.textbox2{
+    display: flex;
+    background-color: #2A262E;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500
+    
+}
+
+.textboxright{
+    margin-left: 100px;
+    justify-content: center;
+    text-align: center;
+    order: 3;
+}
+
+.textboxleft{
+    margin-right: 100px;
+    justify-content: center;
+    text-align: center;
+    order: 1;
+}
+
+.imageleft{
+    justify-content: right;
+}
+
+.imageright{
+    display: flex;
+    order: 3;
+    justify-content: right;
+    align-items: right;
+}
+
+.video {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 568px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 1em;
+    overflow: hidden;
+    
+}
