@@ -1,0 +1,186 @@
+html {
+    background-color: #E8E8E8;
+    
+    
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #032541;
+    height: 5em;
+    position: relative;
+    bottom: 16px;
+}
+
+
+.nav-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-left: 2em;
+
+    
+}
+
+
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.nav-item-1 {
+    list-style: none;
+    position: relative;
+    left: 15em;
+    top: 8px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3em;
+    row-gap: 1em;
+    column-gap: 1em;
+}
+
+.movie {
+    width: 250px;
+    height: 450px;
+    margin: 1em; 
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 10px 20px grey;
+}
+
+
+.movie:hover{
+    box-shadow: 0 0 25px #032541;
+    transition: opacity 0.25s;
+}
+
+ span {
+    color: white;
+    background-color: #032541;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 3px;
+    border: px solid white;
+    padding: 0.25em 0.25em;
+    margin-top: 3em;
+    
+}
+
+.info span.green {
+    color: lightgreen;
+}
+
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 0.5px;
+}
+
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2em 1em 1em 1em;
+}
+
+.search {
+    border-radius: 20px;
+    height: 2em;
+    background-color: transparent;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border: 0.25px solid #9F9F9F;
+    padding-left: 0.5em;
+
+}
+
+.search:focus{
+    outline: 0;
+    
+}
+
+.plot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 450px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    border-radius: 20px;
+}
+
+.plot:hover {
+    cursor: pointer;
+}
+
+.plottitle{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 0.5px;
+}
+
+.plotactual{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 2em;
+    text-align: justify;
+}
+
+.movieimage{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+
+.border-img {
+    border-radius: 20px 20px 0 0;
+}
+
+
+.movieimage:hover .plot{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+p {
+    width: 13em;
+}
+
+
+
